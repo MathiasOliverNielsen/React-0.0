@@ -1,15 +1,13 @@
+import "./Header.css";
+import Navbar from "../Navbar/Navbar";
+
 function Header() {
   return (
-    <header
-      style={{
-        backgroundColor: "#282c34",
-        padding: "20px",
-        textAlign: "center",
-        color: "white",
-        marginBottom: "20px",
-      }}
-    >
-      <h1>Positives and Negatives about React</h1>
+    <header className="header">
+      <Navbar />
+      <div className="header__content">
+        <h1>Positives and Negatives about React</h1>
+      </div>
     </header>
   );
 }
